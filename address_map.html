@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_865db96d25c4b2eb2e5fff033788e88c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_865db96d25c4b2eb2e5fff033788e88c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_865db96d25c4b2eb2e5fff033788e88c = L.map(
+                "map_865db96d25c4b2eb2e5fff033788e88c",
+                {
+                    center: [45.528542571428574, -122.6837332244898],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a173bf38dec90e87652d303f93956d13 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_a173bf38dec90e87652d303f93956d13.addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+            var marker_f8fd778b654f41090689a1a3a63be8ae = L.marker(
+                [45.528542571428574, -122.6837332244898],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_8297972d2bae575c6c4fcd6622dc8f19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2a327615b11b35b03d343b7e755c67a = $(`<div id="html_b2a327615b11b35b03d343b7e755c67a" style="width: 100.0%; height: 100.0%;">1234 NW Johnson St, Portland, OR 97209</div>`)[0];
+                popup_8297972d2bae575c6c4fcd6622dc8f19.setContent(html_b2a327615b11b35b03d343b7e755c67a);
+            
+        
+
+        marker_f8fd778b654f41090689a1a3a63be8ae.bindPopup(popup_8297972d2bae575c6c4fcd6622dc8f19)
+        ;
+
+        
+    
+    
+            marker_f8fd778b654f41090689a1a3a63be8ae.bindTooltip(
+                `<div>
+                     1234 NW Johnson St, Portland, OR 97209
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf57a81c93791c1c1750b30290b15645 = L.marker(
+                [45.51169867346939, -122.60485453061224],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_e7e7a0c0c2f763369d7898b3b856c703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbb0d982c73945c339cf7ebe3624e556 = $(`<div id="html_dbb0d982c73945c339cf7ebe3624e556" style="width: 100.0%; height: 100.0%;">5678 SE Hawthorne Blvd, Portland, OR 97215</div>`)[0];
+                popup_e7e7a0c0c2f763369d7898b3b856c703.setContent(html_dbb0d982c73945c339cf7ebe3624e556);
+            
+        
+
+        marker_bf57a81c93791c1c1750b30290b15645.bindPopup(popup_e7e7a0c0c2f763369d7898b3b856c703)
+        ;
+
+        
+    
+    
+            marker_bf57a81c93791c1c1750b30290b15645.bindTooltip(
+                `<div>
+                     5678 SE Hawthorne Blvd, Portland, OR 97215
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d09c41d3558d97d68c7db891cf8808dc = L.marker(
+                [45.459368600000005, -122.70912499864086],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_7dcf49981dce437586a8ac43113132b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c1d5a0713faa5bc274ede5b972b7416 = $(`<div id="html_5c1d5a0713faa5bc274ede5b972b7416" style="width: 100.0%; height: 100.0%;">9101 SW Barbur Blvd, Portland, OR 97219</div>`)[0];
+                popup_7dcf49981dce437586a8ac43113132b1.setContent(html_5c1d5a0713faa5bc274ede5b972b7416);
+            
+        
+
+        marker_d09c41d3558d97d68c7db891cf8808dc.bindPopup(popup_7dcf49981dce437586a8ac43113132b1)
+        ;
+
+        
+    
+    
+            marker_d09c41d3558d97d68c7db891cf8808dc.bindTooltip(
+                `<div>
+                     9101 SW Barbur Blvd, Portland, OR 97219
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_484c891e51e7e588bb2e0c758551a9f2 = L.marker(
+                [45.527707649999996, -122.6417477],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_0faaa54d9762ca94d122bb8f61792df1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6ac56251cdcc35df796ae62c57a66df = $(`<div id="html_a6ac56251cdcc35df796ae62c57a66df" style="width: 100.0%; height: 100.0%;">2345 NE Sandy Blvd, Portland, OR 97232</div>`)[0];
+                popup_0faaa54d9762ca94d122bb8f61792df1.setContent(html_a6ac56251cdcc35df796ae62c57a66df);
+            
+        
+
+        marker_484c891e51e7e588bb2e0c758551a9f2.bindPopup(popup_0faaa54d9762ca94d122bb8f61792df1)
+        ;
+
+        
+    
+    
+            marker_484c891e51e7e588bb2e0c758551a9f2.bindTooltip(
+                `<div>
+                     2345 NE Sandy Blvd, Portland, OR 97232
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9756490220453aa1cbe9a2fe820ad75 = L.marker(
+                [45.487063202442044, -122.74450591992094],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_dc9173ba47fc667db7f580c49b4b4f23 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ace066fafdb3997f7431ad153012bbd5 = $(`<div id="html_ace066fafdb3997f7431ad153012bbd5" style="width: 100.0%; height: 100.0%;">6789 SW Beaverton-Hillsdale Hwy, Portland, OR 97225</div>`)[0];
+                popup_dc9173ba47fc667db7f580c49b4b4f23.setContent(html_ace066fafdb3997f7431ad153012bbd5);
+            
+        
+
+        marker_e9756490220453aa1cbe9a2fe820ad75.bindPopup(popup_dc9173ba47fc667db7f580c49b4b4f23)
+        ;
+
+        
+    
+    
+            marker_e9756490220453aa1cbe9a2fe820ad75.bindTooltip(
+                `<div>
+                     6789 SW Beaverton-Hillsdale Hwy, Portland, OR 97225
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c86633f2a1d89d64e34c64ceb577d41 = L.marker(
+                [45.54794190909091, -122.61965790909092],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_443b5b4df9e0d48bceeebf4092f617bd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d2a7c776ff1fd0ce861640e5aad4921 = $(`<div id="html_2d2a7c776ff1fd0ce861640e5aad4921" style="width: 100.0%; height: 100.0%;">3456 NE 42nd Ave, Portland, OR 97213</div>`)[0];
+                popup_443b5b4df9e0d48bceeebf4092f617bd.setContent(html_2d2a7c776ff1fd0ce861640e5aad4921);
+            
+        
+
+        marker_9c86633f2a1d89d64e34c64ceb577d41.bindPopup(popup_443b5b4df9e0d48bceeebf4092f617bd)
+        ;
+
+        
+    
+    
+            marker_9c86633f2a1d89d64e34c64ceb577d41.bindTooltip(
+                `<div>
+                     3456 NE 42nd Ave, Portland, OR 97213
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b0a54b02458f145bddffdba04530e49 = L.marker(
+                [45.50528141875913, -122.58213138207638],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_f7dd511952fb4dcc07a9b8da3571209c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31a85ceff164ddc86d800c8134a967c0 = $(`<div id="html_31a85ceff164ddc86d800c8134a967c0" style="width: 100.0%; height: 100.0%;">7890 SE Division St, Portland, OR 97206</div>`)[0];
+                popup_f7dd511952fb4dcc07a9b8da3571209c.setContent(html_31a85ceff164ddc86d800c8134a967c0);
+            
+        
+
+        marker_8b0a54b02458f145bddffdba04530e49.bindPopup(popup_f7dd511952fb4dcc07a9b8da3571209c)
+        ;
+
+        
+    
+    
+            marker_8b0a54b02458f145bddffdba04530e49.bindTooltip(
+                `<div>
+                     7890 SE Division St, Portland, OR 97206
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92d6873f86b40208f93db9c723370d8e = L.marker(
+                [45.47631804081633, -122.72388679591838],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_a5e7305256d7dc3e22500746c9f03a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6d55205bc6aa4709842611e687bf18a = $(`<div id="html_a6d55205bc6aa4709842611e687bf18a" style="width: 100.0%; height: 100.0%;">4567 SW Vermont St, Portland, OR 97219</div>`)[0];
+                popup_a5e7305256d7dc3e22500746c9f03a26.setContent(html_a6d55205bc6aa4709842611e687bf18a);
+            
+        
+
+        marker_92d6873f86b40208f93db9c723370d8e.bindPopup(popup_a5e7305256d7dc3e22500746c9f03a26)
+        ;
+
+        
+    
+    
+            marker_92d6873f86b40208f93db9c723370d8e.bindTooltip(
+                `<div>
+                     4567 SW Vermont St, Portland, OR 97219
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f79a9d84c6d8b5969e282486ad5a1e0d = L.marker(
+                [45.497479, -122.571666],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_d20e76f734424560f980a02501c7b0db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2de9c0b16c8e95235c937b495209a9d = $(`<div id="html_f2de9c0b16c8e95235c937b495209a9d" style="width: 100.0%; height: 100.0%;">8901 SE Powell Blvd, Portland, OR 97266</div>`)[0];
+                popup_d20e76f734424560f980a02501c7b0db.setContent(html_f2de9c0b16c8e95235c937b495209a9d);
+            
+        
+
+        marker_f79a9d84c6d8b5969e282486ad5a1e0d.bindPopup(popup_d20e76f734424560f980a02501c7b0db)
+        ;
+
+        
+    
+    
+            marker_f79a9d84c6d8b5969e282486ad5a1e0d.bindTooltip(
+                `<div>
+                     8901 SE Powell Blvd, Portland, OR 97266
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fca84f9d31339f5969c66d3a7fa1097 = L.marker(
+                [45.563107309773834, -122.74493237108078],
+                {}
+            ).addTo(map_865db96d25c4b2eb2e5fff033788e88c);
+        
+    
+        var popup_332765ea5ea722d8acd0b27b44d42745 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d66c81fe498cb21979b03d80e4d9a906 = $(`<div id="html_d66c81fe498cb21979b03d80e4d9a906" style="width: 100.0%; height: 100.0%;">5678 NW St Helens Rd, Portland, OR 97210</div>`)[0];
+                popup_332765ea5ea722d8acd0b27b44d42745.setContent(html_d66c81fe498cb21979b03d80e4d9a906);
+            
+        
+
+        marker_1fca84f9d31339f5969c66d3a7fa1097.bindPopup(popup_332765ea5ea722d8acd0b27b44d42745)
+        ;
+
+        
+    
+    
+            marker_1fca84f9d31339f5969c66d3a7fa1097.bindTooltip(
+                `<div>
+                     5678 NW St Helens Rd, Portland, OR 97210
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
